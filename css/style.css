@@ -1305,7 +1305,9 @@ letter-spacing: 1px;
 
     font-weight: bold;
 
-    display: inline-block;
+    display: block;
+
+    width: fit-content;
 
     margin-bottom: 12px;
 
@@ -1377,17 +1379,14 @@ letter-spacing: 1px;
 
     0% {
         opacity: .5;
-        transform: scale(.9);
     }
 
     50% {
         opacity: 1;
-        transform: scale(1.15);
     }
 
     100% {
         opacity: .5;
-        transform: scale(.9);
     }
 
 }
