@@ -146,14 +146,13 @@
       </p>
 
       <p>
-        <strong>
-          niktoshevsky@gmail.com
-        </strong>
+        <strong id="email-text"></strong>
       </p>
 
       <a
+        id="email-link"
         class="btn secondary"
-        href="mailto:niktoshevsky@gmail.com">
+        href="">
 
         Написать
 
@@ -232,6 +231,19 @@ aria-label="Наверх">
 </button>
 
 <script src="js/main.js"></script>
+
+<script>
+    const a = "bmlrdG9z";
+    const b = "bWFpbC5jb20=";
+    const c = "aGV2c2t5QGc=";
+    const email = atob(a + c) + atob(b);
+
+    let emailLink = document.getElementById("email-link");
+    let emailText = document.getElementById("email-text");
+
+    emailText.innerText = email;
+    emailLink.href = `mailto:${email}`;
+</script>
 
 </body>
 </html>
