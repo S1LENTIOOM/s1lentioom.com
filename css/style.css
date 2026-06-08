@@ -1289,6 +1289,14 @@ letter-spacing: 1px;
 
 }
 
+.feature-card .genre-star {
+
+    font-size: 34px;
+
+    margin-bottom: 12px;
+
+}
+
 /* Звезды жанров */
 
 .genre-star {
